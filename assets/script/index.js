@@ -92,13 +92,16 @@ function search(event) {
   
   const target = event.target;
 
-  if(target.value.length < 3) {
+  if(target.value.length < 2) {
     return;
   }
 
-  const list = getAvailableResults(target)
-  const searchResults = createSearchResultsElement(list)
-
+  const list = getAvailableResults(target);
+  const searchResults = createSearchResultsElement(list);
+  console.log(target.clientWidth);
+  const width = target.clientWidth;
+  searchResults.style.width = `${width}`;
+  searchResults.style.maxWidth = `${width}`;
   target.parentNode.append(searchResults);
   onEvent("blur", target, function() {
     setTimeout(() => {
@@ -129,7 +132,7 @@ function getAvailableResults(node) {
 function createSearchResultsElement(array) {
   const searchResults = document.createElement("div");
   searchResults.classList.add("search-result-container");
-
+  
   if(array.length == 0) {
     searchResults.append(createSearchResultButton(noResultsString));
     return searchResults;

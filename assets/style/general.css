@@ -4,6 +4,7 @@
     --app-color-secondary: ;
 
     --app-dark-bg:         26 29 40;
+    --app-dark-second:     40 40 40;
     --app-light-bg:     234 238 242;
     --app-red:          219 112 147;
     --app-green:        112 219 147;
@@ -27,7 +28,7 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 p, h1, h2, h3, h4, h5, h6 {
-    color: rgb(40 40 40);
+    color: rgb(220 220 220);
 }
 
 
@@ -37,12 +38,12 @@ p, h1, h2, h3, h4, h5, h6 {
 
 header {
     height: var(--header-height);
-    background-color: rgb(var(--app-light-bg));
+    background-color: rgb(var(--app-dark-second));
     line-height: var(--header-height);
 }
 
 nav a {
-    color: rgb(40 40 40);
+    color: rgb(220 220 220);
     text-decoration: none;
 }
 
@@ -75,7 +76,7 @@ nav ul {
 footer {
     height: var(--footer-height);
     
-    background-color: rgb(var(--app-light-bg));
+    background-color: rgb(var(--app-dark-second));
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -84,7 +85,11 @@ footer {
 
 main {
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
-    background-color: var(--app-dark-bg);
+}
+
+body {
+    background-color: rgb(var(--app-dark-bg));
+    
 }
 
 
@@ -99,7 +104,7 @@ input:not([type=button]) {
     height: 48px;
     padding: 0 15px;
     border: 1px solid rgb(255 255 255 / 0.1);
-    
+    background-color: rgb(255 255 255 / 0.1);
     border-radius: 4px;
     box-shadow: rgb(0 0 0 / 0.1) 0px 26px 30px -10px, rgb(0 0 0 / 0.1) 0px 16px 10px -10px;
     font-size: 17px;
@@ -107,6 +112,11 @@ input:not([type=button]) {
     text-align: left;
     color: rgb(40 40 40);
 
+}
+
+input[type=text] {
+    background-color: rgb(var(--app-dark-second));
+    color: rgb(220 220 220);
 }
    
 
@@ -120,7 +130,7 @@ input:not([type=text]):focus {
   
 button, input[type=button] {
     width: 120px;
-    height: 46px;
+    height: 48px;
     text-align: center;
     color: #fff;
     background-color: rgb(var(--app-blue));

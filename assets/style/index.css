@@ -8,8 +8,8 @@
 @layer base {
   form {
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
-    justify-content:  space-between;
+    grid-template-columns: 1fr 1fr;
+    /* justify-content:  space-between; */
     gap: 8px;
   }
 
@@ -22,13 +22,12 @@
     
   }
 
-
   .grid-container {
     display: grid;
   }
 
   .movie-container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     grid-auto-rows: max-content;
   }
@@ -37,6 +36,10 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+  }
+
+  input {
+    padding-left: 8px;
   }
 }
 
@@ -48,5 +51,22 @@
   .result-button:hover {
     border: 1px solid rgb(var(--app-blue));
     background-color: rgb(var(--app-blue-second));
+  }
+
+
+  .search-result-container {
+    position:absolute;
+    max-width: max-content;
+  }
+
+  .search-result {
+    background-color: rgb(var(--app-light-bg));
+    width: 100%;
+    padding: 0 8px;
+    
+  }
+
+  .search-result p {
+    color: rgb(40 40 40 );
   }
 }
