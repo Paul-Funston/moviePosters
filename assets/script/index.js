@@ -101,10 +101,11 @@ function search(event) {
 
   target.parentNode.append(searchResults);
   onEvent("blur", target, function() {
-    searchResults.remove();
+    setTimeout(() => {
+      searchResults.remove()}, 150);
   });
   onEvent("keyup", target, function() {
-    searchResults.remove()
+    searchResults.remove();
   })
   
 }
@@ -119,7 +120,7 @@ function getAvailableResults(node) {
 
   if (node == movieSearch) {
     results = movies.filter(movie => movie.title.toLowerCase().includes(string));
-    results = results.map(movie => movie.title);
+    results = results.map(movie => movie.title + ` (${movie.year})`);
   }
 
   return results;
