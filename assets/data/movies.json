@@ -26,7 +26,7 @@
       "year": 2021,
       "runningTime": "2h 25m",
       "genre": ["Action", "Crime", "Thriller"],
-      "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/fast-9.jpg"
+      "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/f9-the-fast-saga.jpg"
     },
     {
       "title": "JFK",
@@ -68,14 +68,14 @@
       "year": 2021,
       "runningTime": "2h 30m",
       "genre": ["Action", "Adventure", "Fantasy"],
-      "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/no-way-home.jpg"
+      "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/spider-man-no-way-home.jpg"
     },
     {
       "title": "Terminator 2: Judgment Day",
       "year": 1991,
       "runningTime": "2h 17m",
       "genre": ["Action", "Sci-Fi"],
-      "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/terminator-2.jpg"
+      "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/terminator-2-judgment-day.jpg"
     },
     {
       "title": "The Exorcist",
@@ -111,14 +111,7 @@
       "runningTime": "3h 14m",
       "genre": ["Drama", "Romance"],
       "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/titanic.jpg"
-    },
-    {
-      "title": "Shang-Chi and the Legend of the Ten Rings",
-      "year": 2021,
-      "runningTime": "2h 12m",
-      "genre": ["Action", "Adventure", "Fantasy"],
-      "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/shang-chi.jpg"
-    },
+    }, 
     {
       "title": "The Godfather",
       "year": 1973,
@@ -132,13 +125,6 @@
       "runningTime": "2h 14m",
       "genre": ["Drama", "Romance"],
       "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/the-remains-of-the-day.jpg"
-    },
-    {
-      "title": "Venom: Let There Be Carnage",
-      "year": 2021,
-      "runningTime": "1h 37m",
-      "genre": ["Action", "Adventure", "Sci-Fi"],
-      "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/venom-2.jpg"
     }
   ],
   "length": 20,
