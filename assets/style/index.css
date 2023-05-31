@@ -1,19 +1,72 @@
-@import "./general.css";
+@layer reset, general, base, special;
 
-form {
-  display: grid;
-  grid-template-columns: 2fr 2fr 1fr;
+@import "./reset.css" layer(reset);
+
+@import "./general.css" layer(general);
+
+
+@layer base {
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* justify-content:  space-between; */
+    gap: 8px;
+  }
+
+  form * {
+    padding: 8px 0;
+  }
+
+  section {
+    margin: 5rem 0;
+    
+  }
+
+  .grid-container {
+    display: grid;
+  }
+
+  .movie-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    grid-auto-rows: max-content;
+  }
+
+  .movie-card p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  input {
+    padding-left: 8px;
+  }
 }
 
-form * {
-  padding: 8px;
-}
+@layer special {
+  .result-button {
+    border: 1px solid rgb(0 0 0 / 0);
+  }
 
-.grid-container {
-  display: grid;
-}
+  .result-button:hover {
+    border: 1px solid rgb(var(--app-blue));
+    background-color: rgb(var(--app-blue-second));
+  }
 
-.movie-container {
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+
+  .search-result-container {
+    position:absolute;
+    max-width: max-content;
+  }
+
+  .search-result {
+    background-color: rgb(var(--app-light-bg));
+    width: 100%;
+    padding: 0 8px;
+    
+  }
+
+  .search-result p {
+    color: rgb(40 40 40 );
+  }
 }
