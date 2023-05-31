@@ -1,1 +1,19 @@
 @import "./general.css";
+
+form {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+}
+
+form * {
+  padding: 8px;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.movie-container {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}

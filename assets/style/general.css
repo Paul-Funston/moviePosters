@@ -39,11 +39,26 @@ p, h1, h2, h3, h4, h5, h6 {
 header {
     height: var(--header-height);
     background-color: rgb(var(--app-light-bg));
+    line-height: var(--header-height);
 }
 
 nav a {
     color: rgb(40 40 40);
     text-decoration: none;
+}
+
+header .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-content: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    text-align: right;
+    
 }
 
 
@@ -82,13 +97,11 @@ input:not([type=button]) {
     box-shadow: rgb(0 0 0 / 0.1) 0px 26px 30px -10px, rgb(0 0 0 / 0.1) 0px 16px 10px -10px;
     font-size: 17px;
     font-weight: 400;
-    color: #fff;
     text-align: left;
+    color: rgb(40 40 40);
+
 }
    
-form input + input {
-    margin-top: 20px;
-}
 
 input:not([type=text]):focus {
     border: 1px solid rgb(255 255 255 / 0.25);
